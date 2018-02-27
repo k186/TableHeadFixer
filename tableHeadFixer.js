@@ -241,6 +241,9 @@
                 return;
             }
             for(var i = 1; i <= fixColumn; i = i + inc) {
+                if(i == 3){
+                    continue;
+                }
                 var nth = inc > 1 ? i - 1 : i;
 
                 var cell = $(row).find("> *:nth-child(" + nth + ")");
